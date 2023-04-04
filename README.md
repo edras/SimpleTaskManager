@@ -1,16 +1,19 @@
 # Simple Task Manager
 
-This project demonstrates the use of a Simple Task Manager. It is not intended to be a Scheduler nor a RTOS,
-but a simple task scheduler that calls functions after a specific delay has run out. If the function call 
+This project demonstrates the use of a Simple Task Manager. It is not intended to be a real scheduler nor a RTOS,
+but a way to handle task that are called repeatedly after a specific delay has run out. 
+This module does not handle cases where the function called blocks the execution or has consumed time and overlapped
+other time slots from other registered functions.
 
 ## Software Architecture
-A task module was implemented where the task_synch function is called every 1 millisecond.
+A task module was implemented where the task_synch function should be called every 1 millisecond.
 
 ```
 Timer0_OverflowCallbackRegister(Task_synch);
 ```
 
-Tasks are registered, modified, or deleted as needed. Tasks are configured to be executed at a specific repeat rate or only once.
+Tasks are registered, modified, or deleted as needed. Tasks are configured to be executed at a specific repeat rate or only once
+by defining the values of DELAY and REPEAT_RATE. 
 
 Task_register(DELAY, REPEAT_RATE, function_pointer);
 
