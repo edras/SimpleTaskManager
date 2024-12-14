@@ -34,12 +34,14 @@
           <itemPath>mcc_generated_files/uart/uart1.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>bme280.h</itemPath>
-      <itemPath>oled.h</itemPath>
-      <itemPath>logo.h</itemPath>
-      <itemPath>bmi160.h</itemPath>
       <itemPath>app.h</itemPath>
       <itemPath>tasks.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>PIC18F57Q43_OLED_Weather_6DOF.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -82,15 +84,8 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>oled.c</itemPath>
       <itemPath>app.c</itemPath>
       <itemPath>tasks.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>PIC18F57Q43_OLED_Weather_6DOF.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
