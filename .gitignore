@@ -1,2 +1,13 @@
-/build/
-/dist/
+# VScode ignore files
+.vscode
+
+# MPLabX ignore files
+.generated_files
+dist/
+debug/
+build/
+private/
+**/nbproject/Makefile-*
+**/nbproject/Package-*
+defmplabxtrace*
+queuelogs/

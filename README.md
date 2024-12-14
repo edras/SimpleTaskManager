@@ -18,9 +18,9 @@ by defining the values of DELAY and REPEAT_RATE.
 Task_register(DELAY, REPEAT_RATE, function_pointer);
 
 ```
-Task_register(0,    200,  func_one);    // func_one() will be executed immediately and after every 200 milliseconds
+Task_register(0,    200,  func_one);    // func_one() will be executed immediately and  every 200 milliseconds
 Task_register(1000, 0,    func_two);    // func_two() will be executed after 1 second, and only once.
-Task_register(1000, 1000, func_three);  // func_three() will be executed after 1 second, and after every 1s again.
+Task_register(1000, 1000, func_three);  // func_three() will be executed after 1 second, and every 1s again.
 ```
 
 To execute the Task module, insert the Task_execute function at the main loop:
@@ -31,4 +31,11 @@ To execute the Task module, insert the Task_execute function at the main loop:
         Task_execute();
         ...
 ```
+
+When registering a task, you get a task indentifier, or index:
+
+```
+uint8_t task_id 
+```
+
 
