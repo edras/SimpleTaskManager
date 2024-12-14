@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=SimpleTaskManager.X
+PROJECTNAME=SimpleTaskManager
 
 # Active Configuration
 DEFAULTCONF=default
