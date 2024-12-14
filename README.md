@@ -35,7 +35,19 @@ To execute the Task module, insert the Task_execute function at the main loop:
 When registering a task, you get a task indentifier, or index:
 
 ```
-uint8_t task_id 
+uint8_t task_id = Task_register(0, 200, func_one);
+```
+
+With this index you may change the rate that the registered task will be executed, using the task registered above, we change the repeat rate from 200 milliseconds to 2 seconds.
+
+```
+Task_modify(task_id, 2000);
+```
+
+Or even delete the task from the SimpleTaskManager:
+
+```
+Task_delete(task_id);
 ```
 
 
