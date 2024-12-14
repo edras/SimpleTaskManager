@@ -1,7 +1,7 @@
 # Simple Task Manager
 
-This project demonstrates the use of a Simple Task Manager. It is not intended to be a real scheduler nor a RTOS,
-but a way to handle task that are called repeatedly after a specific delay has run out. 
+This project demonstrates the use of Simple Task Manager. It is not intended to be a real scheduler nor a RTOS,
+but a way to handle tasks that are called repeatedly after a specific delay has run out. 
 This module does not handle cases where the function called blocks the execution or has consumed time and overlapped
 other time slots from other registered functions.
 
